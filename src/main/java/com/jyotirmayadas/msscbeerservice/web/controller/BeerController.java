@@ -8,10 +8,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RequestMapping("/api/v1/beer")
+@RestController
 public class BeerController {
 
-    @GetMapping("/{beerid}")
-    public ResponseEntity<BeerDto> geetBeerById(@PathVariable("beerid") UUID beerid) {
+    @GetMapping("/{beerId}")
+    public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID beerId) {
 
         // todo impl
         return new ResponseEntity<>(BeerDto.builder().build(), HttpStatus.OK);
