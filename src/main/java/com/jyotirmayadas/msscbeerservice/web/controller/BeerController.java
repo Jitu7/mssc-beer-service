@@ -9,6 +9,7 @@ import javax.validation.Valid;
 import java.util.UUID;
 
 @RequestMapping("/api/v1/beer")
+@RestController
 public class BeerController {
 
     @GetMapping("/{beerid}")
